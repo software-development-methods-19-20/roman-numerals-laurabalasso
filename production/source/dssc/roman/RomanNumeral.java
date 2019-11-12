@@ -13,14 +13,11 @@ public class RomanNumeral {
     @Override
     public String toString() {
 
-        if(this.decimal==0){
+        if(this.decimal==0) {
             return "";
         }
-        else if(this.decimal == 1){
-            return "I";
-        }
         else {
-            return "II";
+            return "I".repeat(decimal);
         }
 
     }

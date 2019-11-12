@@ -24,6 +24,11 @@ public class DecimalToRomanNumeralTest {
         check(2, "II");
     }
 
+    @Test
+    void threeIsIII() {
+        check(3, "III");
+    }
+
     private void check(int decimal, String expected){
         RomanNumeral romanNumeral = new RomanNumeral(decimal);
         assertEquals(expected, romanNumeral.toString());
