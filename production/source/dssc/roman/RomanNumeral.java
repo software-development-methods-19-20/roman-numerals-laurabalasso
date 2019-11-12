@@ -16,8 +16,11 @@ public class RomanNumeral {
         if(this.decimal==0){
             return "";
         }
-        else{
+        else if(this.decimal == 1){
             return "I";
+        }
+        else {
+            return "II";
         }
 
     }
